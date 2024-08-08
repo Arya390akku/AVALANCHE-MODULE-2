@@ -55,8 +55,7 @@ If you encounter any issues:
 For more help, you can refer to the [Remix Documentation](https://remix-ide.readthedocs.io/).
 
 ## Authors
-
-- Your Name - [Arya390akku)
+ [Arya390akku)
 
 ## License
 
