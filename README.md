@@ -1,4 +1,4 @@
-Sure! Here's the README file tailored for running the `SPO Token` contract on the Remix Ethereum IDE:
+
 
 ---
 
