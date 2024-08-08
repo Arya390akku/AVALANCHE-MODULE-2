@@ -32,14 +32,8 @@ To use this contract, you'll need access to the [Remix Ethereum IDE](https://rem
    - Click on the "Solidity Compiler" tab in the left sidebar.
    - Click the "Compile SPOToken.sol" button to compile the contract.
 
-2. **Deploy the Contract**:
-   - After successfully compiling the contract, navigate to the "Deploy & Run Transactions" tab in the left sidebar.
-   - Select "Injected Web3" as the environment if you want to deploy on a testnet like Rinkeby, or "JavaScript VM (London)" for a local simulation.
-   - Ensure that the `token` contract is selected in the "Contract" dropdown.
-   - For the constructor, enter the owner's address in the `initialOwner` field.
-   - Click "Deploy" to deploy the contract.
 
-3. **Interact with the Contract**:
+2. **Interact with the Contract**:
    - Once deployed, the contract's functions will be available under the "Deployed Contracts" section.
    - **Minting Tokens**: As the owner, call the `mint` function, entering the recipient's address and the amount of tokens to mint.
    - **Burning Tokens**: Any token holder can call the `burn` function to burn a specified amount of their tokens.
