@@ -17,8 +17,6 @@ The `SPO Token` contract is a customizable ERC-20 token built using OpenZeppelin
 
 ## Getting Started
 
-### Installing
-
 To use this contract, you'll need access to the [Remix Ethereum IDE](https://remix.ethereum.org/).
 
 1. **Open Remix**:
@@ -26,41 +24,6 @@ To use this contract, you'll need access to the [Remix Ethereum IDE](https://rem
 
 2. **Create a New File**:
    - In the Remix IDE, create a new Solidity file (e.g., `SPOToken.sol`).
-
-3. **Copy the Contract Code**:
-   - Copy and paste the following Solidity code into your newly created file:
-
-    ```solidity
-    // SPDX-License-Identifier: MIT
-    pragma solidity ^0.8.20;
-
-    import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-    import "@openzeppelin/contracts/access/Ownable.sol";
-
-    contract token is ERC20, Ownable {
-        constructor(address initialOwner)
-            ERC20("SPO", "26")
-            Ownable(initialOwner)
-        {}
-
-        function burn(uint256 amount) external {
-            _burn(_msgSender(), amount);
-        }
-
-        function mint(address to, uint256 amount) external onlyOwner {
-            _mint(to, amount);
-        }
-
-        function transfer(address recipient, uint256 amount)
-            public
-            override
-            returns (bool)
-        {
-            _transfer(_msgSender(), recipient, amount);
-            return true;
-        }
-    }
-    ```
 
 ### Executing Program
 
@@ -93,14 +56,10 @@ For more help, you can refer to the [Remix Documentation](https://remix-ide.read
 
 ## Authors
 
-Contributors to the project:
-
-- Your Name - [@YourGitHubHandle](https://github.com/YourGitHubHandle)
+- Your Name - [Arya390akku)
 
 ## License
 
 This project is licensed under the MIT License - see the LICENSE.md file for details.
 
----
 
-This README is designed to guide users through the process of deploying and interacting with the `SPO Token` contract using the Remix IDE.
